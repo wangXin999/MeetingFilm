@@ -1,0 +1,10 @@
+dubbo负载均衡策略：
+    1.Random随机，按权重设置随机概率
+    2.RoundRobin轮询
+    3.LeastActive最少活跃数，
+    4.ConsistentHash一致性哈希
+
+dubbo协议：
+    1.dubbo：单连接，长连接，TCP协议，NIO异步，适用于消费者个数多
+    2.RMI：多连接，短连接，TCP协议，同步传输，适用消费者和提供者数量相差不大
+    3.Hessian：多连接，短连接，HTTP协议，同步传输，适用消费者和提供者数量相差不大
